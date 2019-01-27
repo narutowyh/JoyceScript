@@ -1,0 +1,21 @@
+{
+  "extends": "react",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018, // 支持es2018新语法
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "semi": ["error", "never"]
+  },
+  "settings": {
+    "react": {
+      "version": "16" // React version, default to the latest React stable release
+    }
+  }
+}
