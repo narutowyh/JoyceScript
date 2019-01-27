@@ -17,14 +17,16 @@ class Home extends React.PureComponent {
     dispatch: PropTypes.func.isRequired
   }
 
-  handleUserNameChange = ({ target: { value } }) => {
-    const { dispatch } = this.props
-    dispatch({
-      type: USER_SET_STATE,
-      data: {
-        name: value
-      }
-    })
+  handleUserNameChange({ target: { value } }) {
+
+  }
+
+  getFrg() {
+    return (
+      <>
+        hello
+      </>
+    )
   }
 
   render() {
@@ -35,6 +37,7 @@ class Home extends React.PureComponent {
     } = this.props
     return (
       <div className="container">
+        {this.getFrg()}
         <div className="children">Hello world! My name is { name }.</div>
         <Input
           value={name}
