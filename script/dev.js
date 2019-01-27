@@ -14,7 +14,7 @@ webpack(webpackDllConfig, (err, stats) => {
     hot: true, // 启用 webpack 的模块热替换特性
     contentBase: path.join(__dirname, "dist"), // ??不太理解
     compress: true, // 是否启用压缩
-    port: 8080, // 端口
+    port: 8080 // 端口
   })
   server.listen(8080, 'localhost', (error) => {
     if (error) {

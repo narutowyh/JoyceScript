@@ -30,7 +30,10 @@ module.exports = {
             options: {
               presets: ['@babel/preset-react'],
               plugins: [
-                ['@babel/plugin-syntax-dynamic-import']
+                ['@babel/plugin-proposal-decorators', { legacy: true }],
+                ['@babel/plugin-syntax-dynamic-import'],
+                ['import', { libraryName: 'antd', style: 'css' }],
+                'transform-class-properties'
               ]
             }
           }
